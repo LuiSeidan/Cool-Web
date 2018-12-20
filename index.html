@@ -1,0 +1,232 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <!-- font awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+  <!--Import Google Icon Font-->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!-- Compiled and minified CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
+  <title>Photo Ninja</title>
+  <style>
+    header{
+      background: url(img/Noir-street.jpg);
+      background-size: cover;
+      background-position: center;
+      min-height: 1000px;
+    }
+    @media screen and (max-width: 670px){
+      header{
+        min-height: 500px;
+      }
+    }
+    .tabs .indicator{
+      background-color: blue;
+    }
+    .tabs .tab a:focus, .tabs .tab a:focus.active{
+      background: transparent;
+    }
+    .section{
+      padding-top: 4vw;
+      padding-bottom: 4vw;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- navbar -->
+  <header>
+    <nav class="nav-wrapper transparent">
+      <div class="container">
+        <a href="#" class="brand-logo">Photo Antrax</a>
+        <a href="#" class="sidenav-trigger" data-target="mobile-menu">
+          <i class="material-icons">menu</i>
+        </a>
+        <ul class="right hide-on-med-and-down">
+          <li><a href="#photos">Photos</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li><a href="#" class="tooltipped btn-floating btn-small indigo darken-4" data-tooltip="This is Instagram">
+            <i class="fab fa-instagram"></i>
+          </a></li>
+          <li><a href="#" class="tooltipped btn-floating btn-small indigo darken-4" data-tooltip="This is Facebook">
+              <i class="fab fa-facebook"></i>
+            </a></li>
+          <li><a href="#" class="tooltipped btn-floating btn-small indigo darken-4" data-tooltip="This is Twitter">
+              <i class="fab fa-twitter"></i>
+            </a></li>    
+        </ul>
+        <ul class="sidenav grey lighten-2" id="mobile-menu">
+          <li><a href="#">Photo's</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <!-- photo / grid -->
+  <section class="container section scrollspy" id="photos">
+    <div class="row">
+      <div class="col s12 l4">
+          <img src="img/portrait.jpg" alt="" class="responsive-img materialboxed">
+      </div>
+      <div class="col s12 l6 offset-l1">
+        <h2 class="indigo-text text-darken-4">Portraits</h2>
+        <p>A portrait is a painting, photograph, sculpture, or other artistic representation of a person, in which the face and its expression is predominant.</p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col s12 l4 offset-l1 push-l7">
+          <img src="img/city.jpg" alt="" class="responsive-img materialboxed">
+      </div>
+      <div class="col s12 l6 offset-l1 pull-l5 right-align">
+        <h2 class="indigo-text text-darken-4">Cityscapes</h2>
+        <p>In the visual arts a cityscape (urban landscape) is an artistic representation, such as a painting, drawing, print or photograph, of the physical aspects of a city or urban area.</p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col s12 l4">
+          <img src="img/nature.jpg" alt="" class="responsive-img materialboxed">
+      </div>
+      <div class="col s12 l6 offset-l1">
+        <h2 class="indigo-text text-darken-4">Nature</h2>
+        <p>Nature, in the broadest sense, is the natural, physical, or material world or universe.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- parallax -->
+  <div class="parallax-container">
+    <div class="parallax">
+      <img src="img/street.jpg" alt="" class="responsive-img">
+    </div>
+  </div>
+
+  <!-- services / tabs -->
+  <section class="container section scrollspy" id="services">
+    <div class="row">
+      <div class="col s12 l4">
+        <h2 class="indigo-text text-darken-4">What i do...</h2>
+          <p>I try to put all my potential at the time of capturing the essence of what I am seeing.</p>
+          <p>Photography is what I'm made for.</p>
+      </div>
+      <div class="col s12 l4 offset-l2">
+        <ul class="tabs">
+          <li class="tab col s6">
+            <a href="#photography" class="indigo-text text-darken-4">Photography</a>
+          </li>
+          <li class="tab col s6">
+              <a href="#editing" class="indigo-text text-darken-4">Editing</a>
+            </li>  
+        </ul>
+        <div class="col s12" id="photography">
+          <p class="flow-text indigo-text text-darken-4">PHOTOGRAPHY</p>
+          <p>Is the art, application and practice of creating durable images by recording light or other electromagnetic radiation, either electronically by means of an image sensor, or chemically by means of a light-sensitive material such as photographic film. It is employed in many fields of science, manufacturing (e.g., photolithography), and business, as well as its more direct uses for art, film and video production, recreational purposes, hobby, and mass communication.</p>
+        </div>
+        <div class="col s12" id="editing">
+            <p class="flow-text indigo-text text-darken-4">EDITING</p>
+            <p>Is the process of selecting and preparing written, visual, audible, and film media used to convey information. The editing process can involve correction, condensation, organization, and many other modifications performed with an intention of producing a correct, consistent, accurate and complete work.</p>
+          </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- parallax -->
+  <div class="parallax-container">
+    <div class="parallax">
+      <img src="img/stars.jpg" alt="" class="responsive-img">
+    </div>
+  </div>
+
+  <!-- contact form -->
+  <section class="container scrollspy" id="contact">
+    <div class="row">
+      <div class="col s12 l5">
+        <h2 class="indigo-text text-darken-4">Get in touch</h2>
+        <p>I would love to work with you :)</p>
+        <p>Keep in touch in any of my social networks.</p>
+        <p>Greetings and good luck ;)</p>
+      </div>
+      <div class="col s12 l5 offset-l2">
+          <form action="">
+            <div class="input-field">
+              <i class="material-icons prefix">email</i>
+              <input type="email" id="email">
+              <label for="email">Your Email</label>
+            </div>
+            <div class="input-field">
+              <i class="material-icons prefix">message</i>
+              <textarea class="materialize-textarea" id="message"></textarea>
+                <label for="message">Your message</label>
+            </div>
+            <div class="input-field">
+              <input type="text" id="date" class="datepicker">
+              <label for="date">Choose a date you need me for...</label>
+            </div>
+            <div class="input-field">
+              <p>services required...</p>
+              <p>
+                <label>
+                  <input type="checkbox">
+                  <span>Photography</span>
+                </label>
+              </p>
+              <p>
+                <label>
+                  <input type="checkbox">
+                  <span>Editing</span>
+                </label>
+              </p>
+            </div>
+            <div class="input-field center">
+              <button class="btn">Submit</button>
+            </div>
+          </form>
+        </div>
+    </div>
+  </section>
+
+  <!-- footer -->
+  <footer class="page-footer grey darken-3">
+    <div class="container">
+      <div class="row">
+        <div class="col s12 l6">
+          <h5>About Me</h5>
+          <p>With extensive experience in event photography including all manner of charitable and cultural events, premieres, fashion shows, concerts, and other celebrations, as well as sports, I am continuing to grow my business shooting weddings, individual and family portraits, headshots, portfolio/model/fashion shoots, and advertising/commercial gigs as well as artistic ventures. Developing additional non-media business clients moving forward.</p>
+        </div>
+        <div class="col s12 l4 offset-l2">
+          <h5>Connect</h5>
+          <ul>
+            <li><a href="#" class="grey-text text-lighten-3">Facebook</a></li>
+            <li><a href="#" class="grey-text text-lighten-3">Twitter</a></li>
+            <li><a href="#" class="grey-text text-lighten-3">Linkedin</a></li>
+            <li><a href="#" class="grey-text text-lighten-3">Instagram</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-copyright grey-darken-4">
+      <div class="container center-align">&copy; 2018 Photo Antrax</div>
+    </div>
+  </footer>
+  <!-- Compiled and minified JavaScript -->
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+  <script>
+    $(document).ready(function(){
+      $('.sidenav').sidenav();
+      $('.materialboxed').materialbox();
+      $('.parallax').parallax();
+      $('.tabs').tabs();
+      $('.datepicker').datepicker({
+        disableWeekends: true
+      });
+      $('.tooltipped').tooltip();
+      $('.scrollspy').scrollSpy();
+    });
+  </script>
+</body>
+</html>
